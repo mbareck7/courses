@@ -10,9 +10,6 @@ public class Product {
      private float prix;
      private String type;
      private Date date;
-
-
-
      
     public String determinerTypeProduit(){//4
         if(this.type.equals("Fruit"))

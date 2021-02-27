@@ -30,7 +30,7 @@ public class MagasinTest {
         // a.getEmployees().add(caissier1A);
 
 
-
+        
         a.getEmployees().add(new Caissier());
         a.getEmployees().add(new Caissier());
         a.getEmployees().add(new Vendeur());

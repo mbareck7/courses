@@ -1,5 +1,6 @@
 package tp5.rimboite.gestionmagasin.magasin;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 import tp5.rimboite.gestionmagasin.employee.Employee;
@@ -17,10 +18,13 @@ public class Magasin {
 
 
 public Magasin(){
-
+    produits = new LinkedList<Product>();
+    employees = new LinkedList<Employee>();
 }
 
     public Magasin(int c,String id, String addr){
+        produits = new LinkedList<Product>();
+        employees = new LinkedList<Employee>();
         this.capacite = c;
         this.id = id;
         this.address = addr;
@@ -127,4 +131,14 @@ public Magasin(){
     public void setEmployees(LinkedList<Employee> employees) {
         this.employees = employees;
     }
+
+    public LinkedList<Product> getProduits() {
+        return produits;
+    }
+
+    public void setProduits(LinkedList<Product> produits) {
+        this.produits = produits;
+    }
+
+    
 }

@@ -2,10 +2,8 @@ package tp5;
 
 import java.util.LinkedList;
 
-import javax.sound.sampled.Port;
 
 import tp5.rimboite.gestionmagasin.employee.Caissier;
-import tp5.rimboite.gestionmagasin.employee.Employee;
 import tp5.rimboite.gestionmagasin.employee.Responsable;
 import tp5.rimboite.gestionmagasin.employee.Vendeur;
 import tp5.rimboite.gestionmagasin.magasin.Magasin;
@@ -30,7 +28,7 @@ public class MagasinTest {
         // a.getEmployees().add(caissier1A);
 
 
-        
+
         a.getEmployees().add(new Caissier());
         a.getEmployees().add(new Caissier());
         a.getEmployees().add(new Vendeur());

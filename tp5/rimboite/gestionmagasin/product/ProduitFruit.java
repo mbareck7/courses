@@ -24,8 +24,9 @@ public class ProduitFruit extends Product implements Critere{
 
 
     @Override
-    public String afficher(){
-        return super.afficher() + " " + this.saison + " " + this.quantite;
+    public void afficher(){
+        super.afficher();
+        System.out.println(" " + this.saison + " " + this.quantite);
     }
 
     public String getSaison() {

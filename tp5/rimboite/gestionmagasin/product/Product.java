@@ -99,9 +99,9 @@ public class Product {
      }
 
      
-     public String afficher() {
-         return "Product [id=" + id + ", libelle=" + libelle + ", marque=" + marque + ", prix=" + prix + ", type="
-                 + type + "]";
+     public void afficher() {
+         System.out.println( "Product [id=" + id + ", libelle=" + libelle + ", marque=" + marque + ", prix=" + prix + ", type="
+                 + type + "]");
      }
 
      public Date getDate() {

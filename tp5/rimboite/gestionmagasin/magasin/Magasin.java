@@ -2,18 +2,29 @@ package tp5.rimboite.gestionmagasin.magasin;
 
 import java.util.LinkedList;
 
+import tp5.rimboite.gestionmagasin.employee.Employee;
 import tp5.rimboite.gestionmagasin.product.*;
 
 public class Magasin {
 
-     private int id;
+     private String id;
      private String address;
      private int capacite;
      private LinkedList<Product> produits;
      private  static LinkedList<Magasin> listStore;
+     private LinkedList<Employee> employees = null;
 
 
 
+public Magasin(){
+
+}
+
+    public Magasin(int c,String id, String addr){
+        this.capacite = c;
+        this.id = id;
+        this.address = addr;
+    }
 
      public boolean ajouterProduit(Product p){
          if(this.produits.size() < 50){
@@ -60,7 +71,7 @@ public class Magasin {
      public int ChercherProduit(Product p){
         for (Magasin magasin : listStore) {
             if(magasin.produits.contains(p))
-                return magasin.id;
+                return 1;
         }
         return -1;
      }
@@ -83,5 +94,37 @@ public class Magasin {
         if(m1ProductNumber > m2ProductNumber)
             m1.afficheMagasin();
         m2.afficheMagasin();
+    }
+
+
+
+
+    public float calculStock(){
+        float quantite = 0.0f;
+        for (Product product : produits) {
+  
+            if(product.determinerTypeProduit().equals("Fruit")){
+                ProduitFruit pf =  (ProduitFruit) product;
+                quantite+=pf.getQuantite();
+            }
+
+        }
+        return quantite;
+    }
+
+    //3
+    public void showMagasinEmployee(){
+        for (Employee employee : employees) {
+            employee.toString();
+        }
+    }
+
+
+    public LinkedList<Employee> getEmployees() {
+        return this.employees;
+    }
+
+    public void setEmployees(LinkedList<Employee> employees) {
+        this.employees = employees;
     }
 }

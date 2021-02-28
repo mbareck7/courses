@@ -14,7 +14,7 @@ public class Product {
     public String determinerTypeProduit(){//4
         if(this.type.equals("Fruit"))
             return "Fruit";
-        return  "Ligume";
+        return  "Legume";
     }
 
 

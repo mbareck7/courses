@@ -1,0 +1,13 @@
+1: grep cot$ data 
+2: grep ^av.*$t data 
+
+4: grep -E '^[a-l][a-z]{4}$' data
+5: grep -c ^V data 
+6: grep ^[A-Z] data 
+7: grep ^[A-Z][A-Z][A-Z]$ data
+7: (method 2 ): grep -E ^[A-Z]{3}$ data
+8: grep [aeuiyo]$ data
+9: grep -i '\<[^[:digit:][:punct:][:space:]aeiou]*[aeiou][^[:digit:][:punct:][:space:]aeiou]*\>' f3.txt
+10: grep -E 'ii|mm' data
+11: 
+12: grep .*\ .* data

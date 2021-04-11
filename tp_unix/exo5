@@ -1,0 +1,5 @@
+1.find -time -3
+2: find -mmin -20
+3: find ./ -size 200k
+4: find / -type f -name dico_franxais.txt
+5: find /usr  -type d -name bin

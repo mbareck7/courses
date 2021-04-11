@@ -1,0 +1,7 @@
+1: ls -a
+2: ls -l
+3: ls *
+4.1: ls -t
+4.2: ls -t -r
+5: ls -l 
+6: le type du ficher
